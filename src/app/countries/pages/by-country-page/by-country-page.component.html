@@ -1,0 +1,25 @@
+<h2>Por País</h2>
+<hr>
+
+
+<div class="row">
+  <div class="col">
+    <!--SearchBox -->
+    <shared-search-box
+      (onValue) = "searchByCountry($event)"
+      placeholder="Buscar por país"
+    >
+    </shared-search-box>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <hr>
+    <ul>
+      <!-- al componente country table, asigno a su array countries, el array countries de
+       byCountry Page component -->
+      <countries-country-table [countries]="countries"></countries-country-table>
+    </ul>
+  </div>
+</div>
